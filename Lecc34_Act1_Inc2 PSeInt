@@ -1,0 +1,13 @@
+Algoritmo Lecc34_Act1_Inc2
+    Definir peso, altura, imc Como Real
+    
+    Escribir Sin Saltar "Peso en kg: "
+    Leer peso
+    
+    Escribir Sin Saltar "Altura en metros: "
+    Leer altura
+    
+    imc = peso / (altura * altura)
+    
+    Escribir "Tu IMC es: ", imc
+FinAlgoritmo
