@@ -1,0 +1,27 @@
+Algoritmo Lecc35_Act1_Inc2
+    Definir precio, pago, cambio, b200, b100, b50, b20 Como Entero
+    
+    Escribir Sin Saltar "Precio producto: "
+    Leer precio
+    
+    Escribir Sin Saltar "Pago del cliente: "
+    Leer pago
+    
+    cambio = pago - precio
+    Escribir "Cambio Total: Q", cambio
+    
+    b200 = Trunc(cambio / 200)
+    cambio = cambio MOD 200
+    
+    b100 = Trunc(cambio / 100)
+    cambio = cambio MOD 100
+    
+    b50 = Trunc(cambio / 50)
+    cambio = cambio MOD 50
+    
+    b20 = Trunc(cambio / 20)
+    cambio = cambio MOD 20
+    
+    Escribir "Billetes = Q200: ", b200, ", Q100: ", b100, ", Q50: ", b50, ", Q20: ", b20
+    Escribir "Monedas = Q", cambio
+FinAlgoritmo
