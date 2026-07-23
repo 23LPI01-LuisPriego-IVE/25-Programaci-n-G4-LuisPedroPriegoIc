@@ -1,0 +1,54 @@
+// Alumno: Luis Pedro Priego Ic 
+// Grado: 4to Bachillerato en Computación 
+// Colegio Salesiano Don Bosco 
+// Docente: Eliezer Crup
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Random random = new Random();
+        string resp;
+
+        do
+        {
+            Console.WriteLine("\n--- PIEDRA, PAPEL O TIJERAS ---");
+            Console.WriteLine("1. Piedra\n2. Papel\n3. Tijeras");
+            Console.Write("Elige una opción (1-3): ");
+            int usuario = int.Parse(Console.ReadLine());
+
+            // La computadora elige un número al azar entre 1 y 3 (el 4 es exclusivo)
+            int pc = random.Next(1, 4);
+
+            string[] opciones = { "Piedra", "Papel", "Tijeras" };
+
+            if (usuario >= 1 && usuario <= 3)
+            {
+                Console.WriteLine("\nTú elegiste: " + opciones[usuario - 1]);
+                Console.WriteLine("La computadora eligió: " + opciones[pc - 1]);
+
+                // Lógica para determinar el ganador
+                if (usuario == pc)
+                {
+                    Console.WriteLine("Resultado: ¡Es un empate!");
+                }
+                else if ((usuario == 1 && pc == 3) || (usuario == 2 && pc == 1) || (usuario == 3 && pc == 2))
+                {
+                    Console.WriteLine("Resultado: ¡Felicidades, ganaste!");
+                }
+                else
+                {
+                    Console.WriteLine("Resultado: La computadora gana.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Opción no válida.");
+            }
+
+            Console.Write("\n¿Deseas jugar de nuevo? (s/n): ");
+            resp = Console.ReadLine().ToLower();
+
+        } while (resp == "s");
+    }
+}
