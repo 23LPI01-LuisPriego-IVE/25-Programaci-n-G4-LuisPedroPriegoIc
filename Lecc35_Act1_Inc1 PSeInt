@@ -1,0 +1,29 @@
+Algoritmo Lecc35_Act1_Inc1
+    Definir monto, usd, eur, mxn, gbp, cad Como Real
+    Definir resp Como Cadena
+    
+    Repetir
+        Escribir Sin Saltar "Ingrese la cantidad en moneda local: "
+        Leer monto
+        
+        // Conversión a 5 monedas extranjeras
+        usd = monto * 0.13
+        eur = monto * 0.12
+        mxn = monto * 2.25
+        gbp = monto * 0.10
+        cad = monto * 0.18
+        
+        // Mostrar resultados
+        Escribir "1. Dólares estadounidenses (USD): ", usd
+        Escribir "2. Euros (EUR): ", eur
+        Escribir "3. Pesos mexicanos (MXN): ", mxn
+        Escribir "4. Libras esterlinas (GBP): ", gbp
+        Escribir "5. Dólares canadienses (CAD): ", cad
+        
+        Escribir Sin Saltar "¿Desea realizar otra conversión? (s/n): "
+        Leer resp
+        
+    // El bucle se repite mientras la respuesta sea "s", 
+    // por lo que se detiene (Hasta Que) la respuesta sea distinta de "s"
+    Hasta Que Minusculas(resp) <> "s"
+FinAlgoritmo
