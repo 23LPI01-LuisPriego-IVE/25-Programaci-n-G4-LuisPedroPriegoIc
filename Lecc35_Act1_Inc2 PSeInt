@@ -1,4 +1,9 @@
 Algoritmo Lecc35_Act1_Inc2
+    // Alumno: Luis Pedro Priego Ic 
+    // Grado: 4to Bachillerato en Computación 
+    // Colegio Salesiano Don Bosco 
+    // Docente: Eliezer Crup
+
     Definir precio, pago, cambio, b200, b100, b50, b20 Como Entero
     
     Escribir Sin Saltar "Precio producto: "
