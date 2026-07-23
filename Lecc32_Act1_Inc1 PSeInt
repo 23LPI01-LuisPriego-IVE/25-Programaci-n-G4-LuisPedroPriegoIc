@@ -1,0 +1,33 @@
+Algoritmo Lecc32_Act1_Inc1
+    Definir metros Como Real
+    Definir opcion Como Cadena
+    
+    Escribir Sin Saltar "Ingrese cantidad en metros: "
+    Leer metros
+    
+    Escribir ""
+    Escribir "a. Milímetros"
+    Escribir "b. Centímetros"
+    Escribir "c. Decímetros"
+    Escribir "d. Hectómetros"
+    Escribir "e. Kilómetros"
+    Escribir Sin Saltar "Seleccione opción: "
+    Leer opcion
+    
+    opcion = Minusculas(opcion)
+    
+    Segun opcion Hacer
+        "a":
+            Escribir metros, " metros equivale a ", metros * 1000, " milímetros"
+        "b":
+            Escribir metros, " metros equivale a ", metros * 100, " centímetros"
+        "c":
+            Escribir metros, " metros equivale a ", metros * 10, " decímetros"
+        "d":
+            Escribir metros, " metros equivale a ", metros / 100, " hectómetros"
+        "e":
+            Escribir metros, " metros equivale a ", metros / 1000, " kilómetros"
+        De Otro Modo:
+            Escribir "Opción inválida."
+    FinSegun
+FinAlgoritmo
