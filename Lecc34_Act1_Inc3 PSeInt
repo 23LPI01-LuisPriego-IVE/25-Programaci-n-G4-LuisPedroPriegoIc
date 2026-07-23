@@ -1,4 +1,9 @@
 Algoritmo Lecc34_Act1_Inc3
+    // Alumno: Luis Pedro Priego Ic 
+    // Grado: 4to Bachillerato en Computación 
+    // Colegio Salesiano Don Bosco 
+    // Docente: Eliezer Crup
+
     Definir centigrados, fahrenheit, celsius, kelvin Como Real
     
     Escribir Sin Saltar "Ingrese la cantidad en grados centígrados: "
