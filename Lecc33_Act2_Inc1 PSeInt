@@ -1,0 +1,28 @@
+Algoritmo Lecc33_Act2_Inc1
+    // Alumno: Luis Pedro Priego Ic
+    // Grado: 4to Bachillerato en Computación
+    // Colegio Salesiano Don Bosco
+    // Docente: Eliezer Crup
+
+    Definir frase, fraseInvertida Como Cadena
+    Definir n, i Como Entero
+    
+    Escribir Sin Saltar "Ingrese una frase: "
+    Leer frase
+    
+    n = Longitud(frase)
+    
+    Dimension caracteres[n]
+    
+    Para i = 1 Hasta n Con Paso 1 Hacer
+        caracteres[i] = Subcadena(frase, i, i)
+    FinPara
+    
+    fraseInvertida = ""
+    
+    Para i = n Hasta 1 Con Paso -1 Hacer
+        fraseInvertida = fraseInvertida + caracteres[i]
+    FinPara
+    
+    Escribir "La frase invertida es: ", fraseInvertida
+FinAlgoritmo
