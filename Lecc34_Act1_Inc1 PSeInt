@@ -1,0 +1,41 @@
+Algoritmo Lecc34_Act1_Inc1
+    Definir opc, num, dec, i Como Entero
+    Definir binario, binStr Como Cadena
+    
+    Escribir "1. Decimal a Binario | 2. Binario a Decimal"
+    Escribir Sin Saltar "Opción: "
+    Leer opc
+    
+    Si opc = 1 Entonces
+        Escribir Sin Saltar "Número Decimal: "
+        Leer num
+        
+        binario = ""
+        
+        // Bucle para convertir de Decimal a Binario
+        Mientras num > 0 Hacer
+            binario = ConvertirATexto(num MOD 2) + binario
+            num = Trunc(num / 2)
+        FinMientras
+        
+        // Condición en caso de que el usuario ingrese un 0
+        Si binario = "" Entonces
+            binario = "0"
+        FinSi
+        
+        Escribir "Binario: ", binario
+        
+    SiNo
+        Escribir Sin Saltar "Ingrese Binario: "
+        Leer binStr
+        
+        dec = 0
+        
+        // Bucle para convertir de Binario a Decimal
+        Para i = 1 Hasta Longitud(binStr) Con Paso 1 Hacer
+            dec = dec * 2 + ConvertirANumero(Subcadena(binStr, i, i))
+        FinPara
+        
+        Escribir "Decimal: ", dec
+    FinSi
+FinAlgoritmo
