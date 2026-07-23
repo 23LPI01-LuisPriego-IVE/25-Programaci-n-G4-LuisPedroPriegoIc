@@ -1,0 +1,17 @@
+Algoritmo Lecc34_Act1_Inc3
+    Definir centigrados, fahrenheit, celsius, kelvin Como Real
+    
+    Escribir Sin Saltar "Ingrese la cantidad en grados centígrados: "
+    Leer centigrados
+    
+    // Fórmulas de conversión
+    fahrenheit = (centigrados * 1.8) + 32
+    celsius = centigrados // Centígrados y Celsius son la misma escala
+    kelvin = centigrados + 273.15
+    
+    Escribir ""
+    Escribir "--- Resultados de la conversión ---"
+    Escribir "a. Fahrenheit: ", fahrenheit
+    Escribir "b. Celsius: ", celsius
+    Escribir "c. Kelvin: ", kelvin
+FinAlgoritmo
